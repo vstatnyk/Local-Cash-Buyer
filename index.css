@@ -1,4 +1,68 @@
 #ProList {
-  /* /offset text to the right a little */
   margin-left: 30px;
+}
+
+/* .btn-custom {
+  background-color: rgb(0, 81, 179);
+  color: rgb(0, 81, 179);
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 7px;
+  border: solid 3px;
+  text-decoration: none;
+}
+
+.btn-custom:hover {
+  background-color: rgb(0, 111, 246);
+  color: rgb(237, 175, 7);
+}
+
+.link {
+  color: rgb(237, 175, 7);
+}
+
+.link:hover {
+  color: rgb(237, 175, 7);
+}
+ */
+
+.btn-custom {
+  /* background-color: rgb(0, 81, 179);
+  color: rgb(237, 175, 7); */
+  background-color: rgb(237, 175, 7);
+  color: rgb(0, 81, 179);
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 7px;
+  border: solid 3px;
+  text-decoration: none;
+}
+
+.btn-custom:hover {
+  background-color: rgb(237, 175, 7);
+  color: rgb(0, 81, 179);
+}
+
+.link {
+  /* color: white; */
+  color: rgb(237, 175, 7);
+}
+
+.link:hover {
+  color: rgb(237, 175, 7);
+}
+
+.link {
+  /* color: white; */
+  color: rgb(0, 81, 179);
+}
+
+.link:hover {
+  color: rgb(0, 81, 179);
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath stroke='rgba(0, 81, 179)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24' /%3E%3C/svg%3E");
+  border: solid 2px rgba(0, 81, 179);
+  border-radius: 5px;
 }
