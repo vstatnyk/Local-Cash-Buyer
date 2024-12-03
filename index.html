@@ -10,6 +10,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" type="text/css" href="index.css">
+  <script type="text/javascript" src="sendmail.js"></script>
 </head>
 
 <body>
@@ -86,14 +87,14 @@
 
 
   <section class="container d-flex flex-column justify-content-center align-items-center mb-3" id="about-us">
-    <h2>
+    <h2 class="text-center">
       About Us
     </h2>
     <div>
       <div class="mb-3">
         <div style="max-width: 600px;">
           <p>
-            <strong>We buy houses</strong> all over the country with YOU, the seller, in mind (our first priority).
+            <strong>We buy houses</strong> ahouses locally with YOU, the seller, as our top priority.
           </p>
           <p>
             We give you the <strong>best all-cash offer</strong> (fast!) for your home, and provide a <strong>super easy
@@ -111,7 +112,7 @@
 
   <section class=" container d-flex flex-column justify-content-center align-items-center mb-3"
     id="how-the-process-works">
-    <h2>
+    <h2 class="text-center">
       How The Process Works
     </h2>
     <!-- Responsive image handling -->
@@ -176,7 +177,7 @@
   <hr>
 
   <section class=" container d-flex flex-column justify-content-center align-items-center mb-3" id="contact-us">
-    <h2>
+    <h2 class="text-center">
       Contact Us
     </h2>
     <div class="container text-center">
@@ -199,14 +200,29 @@
                   placeholder="Enter your phone number" required />
               </div>
               <div class="mb-3">
-                <label for="address" class="form-label">Your Address</label>
-                <input type="text" class="border border-dark form-control" id="address" placeholder="Enter the address"
+                <label for="address" class="form-label">Your Street Address</label>
+                <input type="text" class="border border-dark form-control" id="street" placeholder="Enter the address"
+                  required />
+              </div>
+              <div class="mb-3">
+                <label for="address" class="form-label">Your City</label>
+                <input type="text" class="border border-dark form-control" id="city" placeholder="Enter the address"
+                  required />
+              </div>
+              <div class="mb-3">
+                <label for="address" class="form-label">Your State</label>
+                <input type="text" class="border border-dark form-control" id="state" placeholder="Enter the address"
+                  required />
+              </div>
+              <div class="mb-3">
+                <label for="address" class="form-label">Your Zip Code</label>
+                <input type="text" class="border border-dark form-control" id="zip" placeholder="Enter the address"
                   required />
               </div>
               <div class="mb-3">
                 <label for="message" class="form-label">Your Message</label>
-                <textarea class="border border-dark form-control" id="message" rows="5" placeholder="Enter your message"
-                  required></textarea>
+                <textarea class="border border-dark form-control" id="message" rows="5"
+                  placeholder="Enter your message"></textarea>
               </div>
               <button type="submit" class="btn btn-custom">
                 Get Started
