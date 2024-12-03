@@ -14,69 +14,84 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-dark pb-3">
+  <!-- <nav class="navbar navbar-expand-lg navbar-light pb-3">
     <div class="container">
       <a class="navbar-brand mx-auto" href="#">
-        <img style="height: 90px;" src="logo LCB.png" alt="Logo Local Ca$h Buyer">
+        <img style="height: 100px;" src="logo LCB.png" alt="Logo Local Ca$h Buyer">
       </a>
-      <button class="navbar-toggler custom-toggler ms-auto" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false"
-        aria-label="Toggle navigation">
+
+      <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+        aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse justify-content-center" id="navbarsExample07">
+      <div class="collapse navbar-collapse justify-content-center" id="navbar">
         <ul class="navbar-nav">
-          <li class="btn btn-custom nav-item m-1">
+          <li class="barItem nav-item m-1">
             <a href="#" class="link nav-link" aria-current="page">Home</a>
           </li>
-          <li class="btn btn-custom nav-item m-1">
+          <li class="barItem nav-item m-1">
             <a href="#about-us" class="link nav-link">About Us</a>
           </li>
-          <li class="btn btn-custom nav-item m-1">
+          <li class="barItem nav-item m-1">
             <a href="#how-the-process-works" class="link nav-link">How The Process Works</a>
           </li>
-          <li class="btn btn-custom nav-item m-1">
+          <li class="barItem nav-item m-1">
             <a href="#why-sell-via-local-cash-buyer" class="link nav-link">Why Sell via Local Ca$h Buyer</a>
           </li>
-          <li class="btn btn-custom nav-item m-1">
+          <li class="barItem nav-item m-1">
             <a href="#contact-us" class="link nav-link">Contact Us</a>
           </li>
         </ul>
       </div>
     </div>
-  </nav>
+  </nav> -->
 
 
-  <section class="d-flex flex-column justify-content-center align-items-center mb-3" id="about-us">
+  <header class="d-flex flex-column align-items-center position-relative">
+
+    <nav class="navbar navbar-expand-lg navbar-light pb-3 w-100">
+      <div class="container flex-column align-items-center p-3 position-relative">
+        <a class="d-flex justify-content-center align-items-center" href="#">
+          <img style="height: 100px;" src="logo LCB.png" alt="Logo Local Ca$h Buyer">
+        </a>
+        <button class="navbar-toggler custom-toggler position-absolute top-0 end-0 m-3" type="button"
+          data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbar">
+          <ul class="navbar-nav">
+            <li class="barItem nav-item m-1">
+              <a href="#" class="link nav-link" aria-current="page">Home</a>
+            </li>
+            <li class="barItem nav-item m-1">
+              <a href="#about-us" class="link nav-link">About Us</a>
+            </li>
+            <li class="barItem nav-item m-1">
+              <a href="#how-the-process-works" class="link nav-link">How The Process Works</a>
+            </li>
+            <li class="barItem nav-item m-1">
+              <a href="#why-sell-via-local-cash-buyer" class="link nav-link">Why Sell via Local Ca$h Buyer</a>
+            </li>
+            <li class="barItem nav-item m-1">
+              <a href="#contact-us" class="link nav-link">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+
+  <section class="container d-flex flex-column justify-content-center align-items-center mb-3" id="about-us">
     <h2>
-      about us
+      About Us
     </h2>
-
-    <a href="#contact-us" class="btn btn-custom">Get Started With Your Offer Now</a>
-  </section>
-  <hr>
-
-  <section class=" container d-flex flex-column justify-content-center align-items-center mb-3"
-    id="how-the-process-works">
-    <h2>
-      How The Process Works
-    </h2>
-
-    <img src="scheme.png" alt="scheme" class="container mb-5 mt-5">
-
-    <a href="#contact-us" class="btn btn-custom">Get Started With Your Offer Now</a>
-  </section>
-  <hr>
-
-  <section class=" container d-flex flex-column justify-content-center align-items-center mb-3"
-    id="why-sell-via-local-cash-buyer">
-    <h2 class="mb-5">
-      WHY SELL via LOCAL CA$H BUYER
-    </h2>
-    <div class="d-flex justify-content-center row text-c">
-      <div class="col-md-4 m-5 mt-0 mb-3">
-        <div class="">
+    <div>
+      <div class="mb-3">
+        <div style="max-width: 600px;">
           <p>
             <strong>We buy houses</strong> all over the country with YOU, the seller, in mind (our first priority).
           </p>
@@ -89,7 +104,35 @@
               is a win-win</strong>.</p>
         </div>
       </div>
-      <div class="ProList col-md-4 m-5 mt-0 mb-3">
+    </div>
+    <a href="#contact-us" class="btn btn-custom">Get Offer Now</a>
+  </section>
+  <hr>
+
+  <section class=" container d-flex flex-column justify-content-center align-items-center mb-3"
+    id="how-the-process-works">
+    <h2>
+      How The Process Works
+    </h2>
+    <!-- Responsive image handling -->
+    <picture class="container mb-5 mt-5">
+      <!-- Image for small screens -->
+      <source srcset="scheme-sm.png" media="(max-width: 992px)">
+      <!-- Default image for larger screens -->
+      <img src="scheme.png" alt="scheme" class="img-fluid">
+    </picture>
+
+    <a href="#contact-us" class="btn btn-custom">Get Offer Now</a>
+  </section>
+  <hr>
+
+  <section class=" container d-flex flex-column justify-content-center align-items-center mb-3"
+    id="why-sell-via-local-cash-buyer">
+    <h2 class="mb-5">
+      Why Sell via LOCAL CA$H BUYER
+    </h2>
+    <div class="d-flex justify-content-center row text-c">
+      <div class="ProList ">
         <div id="ProList" class="">
           <p class="" style="font-size: 18px;">
             <i class="fa-solid fa-arrow-circle-right" style="font-size: 24px; color: rgb(0, 81, 179)"></i>
@@ -123,16 +166,12 @@
             <i class="fa-solid fa-arrow-circle-right" style="font-size: 24px; color: rgb(0, 81, 179)"></i>
             No Repairs or Fixes (As-Is)
           </p>
-          <p class="" style="font-size: 18px;">
-            <i class="fa-solid fa-arrow-circle-right" style="font-size: 24px; color: rgb(0, 81, 179)"></i>
-            No Repairs or Fixes (As-Is)
-          </p>
         </div>
       </div>
     </div>
 
 
-    <a href="#contact-us" class="btn btn-custom">Get Started With Your Offer Now</a>
+    <a href="#contact-us" class="btn btn-custom">Get Offer Now</a>
   </section>
   <hr>
 
@@ -189,19 +228,19 @@
 
     <ul class="nav col-md-4">
       <li class="nav-item">
-        <a href="#" class="nav-link text-dark" aria-current="page">Home</a>
+        <a href="#" class="footerLink text-dark" aria-current="page">Home</a>
       </li>
       <li class="nav-item">
-        <a href="#about-us" class="nav-link text-dark">About Us</a>
+        <a href="#about-us" class="footerLink text-dark">About Us</a>
       </li>
       <li class="nav-item">
-        <a href="#how-the-process-works" class="nav-link text-dark">How The Process Works</a>
+        <a href="#how-the-process-works" class="footerLink text-dark">How The Process Works</a>
       </li>
       <li class="nav-item">
-        <a href="#why-sell-via-local-cash-buyer" class="nav-link text-dark">Why Sell via Local Cash Buyer</a>
+        <a href="#why-sell-via-local-cash-buyer" class="footerLink text-dark">Why Sell via Local Cash Buyer</a>
       </li>
       <li class="nav-item">
-        <a href="#contact-us" class="nav-link text-dark">Contact Us</a>
+        <a href="#contact-us" class="footerLink text-dark">Contact Us</a>
       </li>
     </ul>
   </footer>

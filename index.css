@@ -61,8 +61,36 @@
   color: rgb(0, 81, 179);
 }
 
-.custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath stroke='rgba(0, 81, 179)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24' /%3E%3C/svg%3E");
-  border: solid 2px rgba(0, 81, 179);
+.custom-toggler {
+  padding: 10px;
+  margin: 10px;
+  color: rgb(0, 81, 179);
   border-radius: 5px;
+  border: solid 3px;
+  display: flex;
+  justify-content: right;
+}
+
+.barItem {
+  color: rgb(0, 81, 179);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.barItem :hover {
+  border-radius: 5px;
+  background-color: rgba(0, 81, 179, 0.117);
+}
+
+.footerLink {
+  color: rgb(0, 81, 179);
+  text-decoration: none;
+  padding: 10px;
+  margin: 10;
+}
+
+@media (min-width: 992px) {
+  #main-img {
+    background-image: url(logo\ LCB.png);
+  }
 }
