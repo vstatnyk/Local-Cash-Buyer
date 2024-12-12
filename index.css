@@ -64,7 +64,7 @@
 }
 
 .footerLink {
-  color: rgb(0, 129, 90);
+  color: rgb(255, 255, 255);
   text-decoration: none;
   padding: 10px;
   margin: 10;
@@ -104,4 +104,38 @@
   background-repeat: repeat;
   background-position-y: center;
   position: relative;
+  height: 100%;
+}
+
+footer {
+  display: block;
+
+  background-color: rgb(0, 78, 56);
+  color: rgb(255, 255, 255);
+  box-shadow: 0 50vh 0 50vh #000;
+}
+
+.footer {
+  unicode-bidi: isolate;
+  padding: 2rem 1rem;
+  position: relative;
+}
+
+.aboutUs {
+  text-align: center;
+  font-size: 24px;
+  background-color: rgb(0, 78, 56);
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+  .arrow {
+    transform: rotate(90deg);
+  }
+
+  .aboutUs {
+    font-size: 16px;
+  }
 }

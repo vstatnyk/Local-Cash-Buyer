@@ -16,18 +16,6 @@ document.addEventListener("DOMContentLoaded", function () {
       street: document.getElementById("street")
         ? document.getElementById("street").value.trim()
         : "",
-      city: document.getElementById("city")
-        ? document.getElementById("city").value.trim()
-        : "",
-      state: document.getElementById("state")
-        ? document.getElementById("state").value.trim()
-        : "",
-      zip: document.getElementById("zip")
-        ? document.getElementById("zip").value.trim()
-        : "",
-      message: document.getElementById("message")
-        ? document.getElementById("message").value.trim()
-        : "",
     };
 
     console.log("Collected Form Data:", formData);
@@ -38,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function submitForm() {
     const data = getFormData();
     const scriptURL =
-      "https://script.google.com/macros/s/AKfycbxcrkbc2hEh-5EPaze79pbiKwSUEaNgcYjB5TeKTH25GrciueZbc1o3CqgEz65BmW_I/exec"; // Replace with your Google Script URL
+      "https://script.google.com/macros/s/AKfycbzA8Hh3EVUWzCxSqZbBPQzRoQ3gPDwpfi4JqjadGtAWPQXfSfRXMftf_yQthvnPmnQ7/exec"; // Replace with your Google Script URL
 
     fetch(scriptURL, {
       method: "POST",
