@@ -15,46 +15,13 @@
 
 <body>
 
-  <!-- <nav class="navbar navbar-expand-lg navbar-light pb-3">
-    <div class="container">
-      <a class="navbar-brand mx-auto" href="#">
-        <img style="height: 100px;" src="logo LCB.png" alt="Logo Local Ca$h Buyer">
-      </a>
-
-      <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
-        aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse justify-content-center" id="navbar">
-        <ul class="navbar-nav">
-          <li class="barItem nav-item m-1">
-            <a href="#" class="link nav-link" aria-current="page">Home</a>
-          </li>
-          <li class="barItem nav-item m-1">
-            <a href="#about-us" class="link nav-link">About Us</a>
-          </li>
-          <li class="barItem nav-item m-1">
-            <a href="#how-the-process-works" class="link nav-link">How The Process Works</a>
-          </li>
-          <li class="barItem nav-item m-1">
-            <a href="#why-sell-via-local-cash-buyer" class="link nav-link">Why Sell via Local Ca$h Buyer</a>
-          </li>
-          <li class="barItem nav-item m-1">
-            <a href="#contact-us" class="link nav-link">Contact Us</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav> -->
-
 
   <header class="d-flex flex-column align-items-center position-relative">
 
     <nav class="navbar navbar-expand-lg navbar-light pb-3 w-100">
       <div class="container flex-column align-items-center p-3 position-relative">
         <a class="d-flex justify-content-center align-items-center" href="#">
-          <img style="height: 100px;" src="logo LCB.png" alt="Logo Local Ca$h Buyer">
+          <img style="height: 100px;" src="logo LCBG.png" alt="Logo Local Ca$h Buyer">
         </a>
         <button class="navbar-toggler custom-toggler position-absolute top-0 end-0 m-3" type="button"
           data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false"
@@ -63,9 +30,7 @@
         </button>
         <div class="collapse navbar-collapse justify-content-center" id="navbar">
           <ul class="navbar-nav">
-            <li class="barItem nav-item m-1">
-              <a href="#" class="link nav-link" aria-current="page">Home</a>
-            </li>
+
             <li class="barItem nav-item m-1">
               <a href="#about-us" class="link nav-link">About Us</a>
             </li>
@@ -76,9 +41,14 @@
               <a href="#why-sell-via-local-cash-buyer" class="link nav-link">Why Sell via Local Ca$h Buyer</a>
             </li>
             <li class="barItem nav-item m-1">
-              <a href="#contact-us" class="link nav-link">Contact Us</a>
+              <a href="#contact-us" class="link nav-link border border-success rounded">Get Offer Now</a>
             </li>
           </ul>
+        </div>
+        <div>
+
+          <a href="tel:9167773355" class="barItem nav-item m-1 link nav-link ">Call Us: (916) 777-3355</a>
+
         </div>
       </div>
     </nav>
@@ -86,13 +56,50 @@
 
 
 
-  <section class="container d-flex flex-column justify-content-center align-items-center mb-3" id="about-us">
+  <section class=" d-flex flex-column justify-content-center align-items-center p-3" id="about-us">
+
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="carousel-caption">
+          </div>
+          <img src="logo LCBG.png" class="d-block w-100" alt="...">
+
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-caption">
+          </div>
+          <img src="logo LCB.png" class="d-block w-100" alt="...">
+
+        </div>
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
     <h2 class="text-center">
       About Us
     </h2>
+
     <div>
       <div class="mb-3">
-        <div style="max-width: 600px;">
+        <div style="">
           <p>
             <strong>We buy houses</strong> ahouses locally with YOU, the seller, as our top priority.
           </p>
@@ -106,28 +113,55 @@
         </div>
       </div>
     </div>
-    <a href="#contact-us" class="btn btn-custom">Get Offer Now</a>
+    <a href="#contact-us" class="btn btn-Green">Get Offer Now</a>
   </section>
-  <hr>
+  <!-- <hr> -->
 
-  <section class=" container d-flex flex-column justify-content-center align-items-center mb-3"
-    id="how-the-process-works">
-    <h2 class="text-center">
-      How The Process Works
-    </h2>
-    <!-- Responsive image handling -->
-    <picture class="container mb-5 mt-5">
-      <!-- Image for small screens -->
-      <source srcset="scheme-sm.png" media="(max-width: 992px)">
-      <!-- Default image for larger screens -->
-      <img src="scheme.png" alt="scheme" class="img-fluid">
-    </picture>
+  <section class="process p-3" id="how-the-process-works">
+    <div class="container  d-flex flex-column justify-content-center align-items-center mb-3">
+      <h2 class="text-center">
+        How The Process Works
+      </h2>
+      <div class="row d-flex justify-content-center align-items-center mb-4">
+        <div class="card col-md-3">
+          <img class="card-img-top" src="scheme-sm.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="d-flex justify-content-center align-items-center card-title h1">Get In Touch</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+        </div>
+        <i class="fa-solid fa-arrow-circle-right col-md-1 d-flex justify-content-center align-items-center"
+          style="font-size: 72px; color: rgb(0, 89, 62);"></i>
+        <div class="card col-md-3">
+          <img class="card-img-top" src="scheme-sm.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="d-flex justify-content-center align-items-center card-title h1">Get An Offer</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+        </div>
+        <i class="fa-solid fa-arrow-circle-right col-md-1 d-flex justify-content-center align-items-center"
+          style="font-size: 72px; color: rgb(0, 89, 62);"></i>
+        <div class="card col-md-3">
+          <img class="card-img-top" src="scheme-sm.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="d-flex justify-content-center align-items-center card-title h1">Sign And Close</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+        </div>
 
-    <a href="#contact-us" class="btn btn-custom">Get Offer Now</a>
+      </div>
+
+
+      <a href="#contact-us" class="btn btn-Green">Get Offer Now</a>
+    </div>
+
   </section>
-  <hr>
 
-  <section class=" container d-flex flex-column justify-content-center align-items-center mb-3"
+
+  <section class=" bottomSection d-flex flex-column justify-content-center align-items-center p-3"
     id="why-sell-via-local-cash-buyer">
     <h2 class="mb-5">
       Why Sell via LOCAL CA$H BUYER
@@ -136,35 +170,35 @@
       <div class="ProList ">
         <div id="ProList" class="">
           <p class="" style="font-size: 18px;">
-            <i class="fa-solid fa-arrow-circle-right" style="font-size: 24px; color: rgb(0, 81, 179)"></i>
+            <i class="fa-solid fa-arrow-circle-right" style="font-size: 24px; color: rgb(211, 204, 177);"></i>
             NO Closing Costs
           </p>
           <p class="" style="font-size: 18px;">
-            <i class="fa-solid fa-arrow-circle-right" style="font-size: 24px; color: rgb(0, 81, 179)"></i>
+            <i class="fa-solid fa-arrow-circle-right" style="font-size: 24px; color: rgb(211, 204, 177)"></i>
             NO Agent Fees
           </p>
           <p class="" style="font-size: 18px;">
-            <i class="fa-solid fa-arrow-circle-right" style="font-size: 24px; color: rgb(0, 81, 179)"></i>
+            <i class="fa-solid fa-arrow-circle-right" style="font-size: 24px; color: rgb(211, 204, 177)"></i>
             Close on Your Schedule
           </p>
           <p class="" style="font-size: 18px;">
-            <i class="fa-solid fa-arrow-circle-right" style="font-size: 24px; color: rgb(0, 81, 179)"></i>
+            <i class="fa-solid fa-arrow-circle-right" style="font-size: 24px; color: rgb(211, 204, 177)"></i>
             Choose Your Move Out Day
           </p>
           <p class="" style="font-size: 18px;">
-            <i class="fa-solid fa-arrow-circle-right" style="font-size: 24px; color: rgb(0, 81, 179)"></i>
+            <i class="fa-solid fa-arrow-circle-right" style="font-size: 24px; color: rgb(211, 204, 177)"></i>
             Choose Your Move Out Day
           </p>
           <p class="" style="font-size: 18px;">
-            <i class="fa-solid fa-arrow-circle-right" style="font-size: 24px; color: rgb(0, 81, 179)"></i>
+            <i class="fa-solid fa-arrow-circle-right" style="font-size: 24px; color: rgb(211, 204, 177)"></i>
             No Inspections, No Appraisals
           </p>
           <p class="" style="font-size: 18px;">
-            <i class="fa-solid fa-arrow-circle-right" style="font-size: 24px; color: rgb(0, 81, 179)"></i>
+            <i class="fa-solid fa-arrow-circle-right" style="font-size: 24px; color: rgb(211, 204, 177)"></i>
             No Showings or Open Houses
           </p>
           <p class="" style="font-size: 18px;">
-            <i class="fa-solid fa-arrow-circle-right" style="font-size: 24px; color: rgb(0, 81, 179)"></i>
+            <i class="fa-solid fa-arrow-circle-right" style="font-size: 24px; color: rgb(211, 204, 177)"></i>
             No Repairs or Fixes (As-Is)
           </p>
         </div>
@@ -172,11 +206,11 @@
     </div>
 
 
-    <a href="#contact-us" class="btn btn-custom">Get Offer Now</a>
+    <a href="#contact-us" class="btn btn-Gold">Get Offer Now</a>
   </section>
-  <hr>
 
-  <section class=" container d-flex flex-column justify-content-center align-items-center mb-3" id="contact-us">
+
+  <section class=" container d-flex flex-column justify-content-center align-items-center p-3" id="contact-us">
     <h2 class="text-center">
       Contact Us
     </h2>
@@ -224,7 +258,7 @@
                 <textarea class="border border-dark form-control" id="message" rows="5"
                   placeholder="Enter your message"></textarea>
               </div>
-              <button type="submit" class="btn btn-custom">
+              <button type="submit" class="btn btn-Green">
                 Get Started
               </button>
             </form>

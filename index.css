@@ -2,69 +2,50 @@
   margin-left: 30px;
 }
 
-/* .btn-custom {
-  background-color: rgb(0, 81, 179);
-  color: rgb(0, 81, 179);
+.btn-Green {
+  background-color: rgb(0, 89, 62);
+  color: rgb(255, 255, 255);
   font-weight: bold;
   padding: 15px;
   border-radius: 7px;
   border: solid 3px;
   text-decoration: none;
+  border: solid 2px rgb(255, 255, 255);
 }
 
-.btn-custom:hover {
-  background-color: rgb(0, 111, 246);
-  color: rgb(237, 175, 7);
+.btn-Green:hover {
+  background-color: rgb(0, 129, 90);
+  color: rgb(255, 255, 255);
 }
 
-.link {
-  color: rgb(237, 175, 7);
-}
-
-.link:hover {
-  color: rgb(237, 175, 7);
-}
- */
-
-.btn-custom {
-  /* background-color: rgb(0, 81, 179);
-  color: rgb(237, 175, 7); */
-  background-color: rgb(237, 175, 7);
-  color: rgb(0, 81, 179);
+.btn-Gold {
+  background-color: rgb(211, 204, 177);
+  color: rgb(0, 0, 0);
   font-weight: bold;
   padding: 15px;
   border-radius: 7px;
   border: solid 3px;
   text-decoration: none;
+  border: solid 2px rgb(255, 255, 255);
 }
 
-.btn-custom:hover {
-  background-color: rgb(237, 175, 7);
-  color: rgb(0, 81, 179);
-}
-
-.link {
-  /* color: white; */
-  color: rgb(237, 175, 7);
-}
-
-.link:hover {
-  color: rgb(237, 175, 7);
+.btn-Gold:hover {
+  background-color: rgb(213, 195, 121);
+  color: rgb(0, 0, 0);
 }
 
 .link {
-  /* color: white; */
-  color: rgb(0, 81, 179);
+  color: rgb(0, 89, 62);
 }
 
 .link:hover {
-  color: rgb(0, 81, 179);
+  color: rgb(0, 129, 90);
 }
 
 .custom-toggler {
   padding: 10px;
   margin: 10px;
-  color: rgb(0, 81, 179);
+  color: rgb(0, 89, 62);
   border-radius: 5px;
   border: solid 3px;
   display: flex;
@@ -72,18 +53,18 @@
 }
 
 .barItem {
-  color: rgb(0, 81, 179);
+  color: rgb(0, 89, 62);
   font-weight: bold;
   font-size: 20px;
 }
 
 .barItem :hover {
   border-radius: 5px;
-  background-color: rgba(0, 81, 179, 0.117);
+  background-color: rgba(0, 89, 62, 0.09);
 }
 
 .footerLink {
-  color: rgb(0, 81, 179);
+  color: rgb(0, 129, 90);
   text-decoration: none;
   padding: 10px;
   margin: 10;
@@ -93,4 +74,34 @@
   #main-img {
     background-image: url(logo\ LCB.png);
   }
+}
+
+.process {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(211, 204, 177);
+}
+
+.bottomSection {
+  padding: 0;
+  background: rgb(0, 78, 56);
+  color: rgb(255, 255, 255);
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.6) 0,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    url(../nav-dots-small.svg),
+    linear-gradient(
+      60deg,
+      rgb(0, 78, 56) 0%,
+      rgb(0, 132, 83) 10%,
+      rgb(0, 170, 79) 30%,
+      rgb(196, 192, 129) 80%
+    );
+  border-radius: 0;
+  background-size: contain;
+  background-repeat: repeat;
+  background-position-y: center;
+  position: relative;
 }
