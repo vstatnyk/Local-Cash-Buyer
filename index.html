@@ -18,52 +18,48 @@
 
   <header class="">
 
-    <nav class="navbar navbar-expand-lg navbar-light pb-3 w-100">
-      <div class="container   p-3 ">
-        <a class="" href="#">
-          <img style="height: 100px;" src="logo LCBG.png" alt="Logo Local Ca$h Buyer">
-        </a>
-        <button class="navbar-toggler custom-toggler position-absolute top-0 end-0 m-3" type="button"
-          data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false"
+
+
+    <nav class="navbar navbar-expand-lg navbar-light pb-3 w-100 container p-3">
+
+      <!-- Logo -->
+      <a href="#" class="navbar-brand">
+        <img src="logo LCBG.png" class="Logo" alt="Logo Local Ca$h Buyer">
+      </a>
+
+      <!-- Toggler -->
+      <!-- <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
           aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbar">
-          <ul class="navbar-nav">
+        </button> -->
 
-            <li class="barItem nav-item m-1">
+      <!-- Navbar Content -->
+      <!-- <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+          <ul class="navbar-nav">
+            <li class="barItem nav-item m-3">
               <a href="#about-us" class="link nav-link">ABOUT US</a>
             </li>
-            <li class="barItem nav-item m-1">
+            <li class=" barItem nav-item m-3">
               <a href="#how-the-process-works" class="link nav-link">HOW THE PROCESS WORKS</a>
             </li>
-            <li class="barItem nav-item m-1">
+            <li class=" barItem nav-item m-3">
               <a href="#why-sell-via-local-cash-buyer" class="link nav-link">WHY SELL VIA LOCAL CA$H BUYER</a>
             </li>
-            <!-- <li class="barItem nav-item m-1">
-              
-            </li> -->
+            <li>
+
+            </li>
           </ul>
-          <div class="col">
-            <button type="button"
-              class="link nav-link border border-success rounded barItem nav-item m-1 link nav-link p-3"
-              data-bs-toggle="modal" data-bs-target="#ContactModal">
-              GET OFFER NOW
-            </button>
-            <a href="tel:9167773355" class="barItem nav-item m-1 link nav-link ">CALL US: (916) 777-3355</a>
-          </div>
+        </div> -->
 
-        </div>
-        <div>
-          <!-- <button type="button"
-            class="link nav-link border border-success rounded barItem nav-item m-1 link nav-link p-3"
-            data-bs-toggle="modal" data-bs-target="#ContactModal">
-            GET OFFER NOW
-          </button>
-          <a href="tel:9167773355" class="barItem nav-item m-1 link nav-link ">CALL US: (916) 777-3355</a> -->
-
-        </div>
+      <!-- Contact Section -->
+      <div class="btnnav">
+        <a href="tel:9167773355" class="btn btn-Green-nav">CALL US: (916) 777-3355</a>
+        <button type="button" class="btn btn-Green-nav px-4" data-bs-toggle="modal" data-bs-target="#ContactModal">
+          GET OFFER NOW
+        </button>
       </div>
+
     </nav>
   </header>
 
@@ -259,7 +255,7 @@
                 required />
             </div>
             <div class="d-flex flex-column justify-content-center align-items-center">
-              <button type="submit" class="btn btn-Green ">
+              <button type="submit" class="btn btn-Green " data-dismiss="modal">
                 Get Started
               </button>
             </div>

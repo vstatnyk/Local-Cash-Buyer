@@ -13,6 +13,18 @@
   border: solid 2px rgb(255, 255, 255);
 }
 
+.btn-Green-nav {
+  background-color: rgb(0, 89, 62);
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 7px;
+  border: solid 3px;
+  text-decoration: none;
+  border: solid 2px rgb(255, 255, 255);
+  width: 250px;
+}
+
 .btn-Green:hover {
   background-color: rgb(0, 129, 90);
   color: rgb(255, 255, 255);
@@ -55,7 +67,7 @@
 .barItem {
   color: rgb(0, 89, 62);
   font-weight: bold;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .barItem :hover {
@@ -137,6 +149,25 @@ footer {
   padding: 10px;
   margin: 0 auto;
 }
+.Logo {
+  height: 150px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+@media screen and (max-width: 991px) {
+  .navbar {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+  }
+}
 
 @media screen and (max-width: 767px) {
   .arrow {
@@ -145,5 +176,31 @@ footer {
 
   .aboutUs {
     font-size: 16px;
+  }
+  .btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Logo {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 536px) {
+  .Logo {
+    height: 150px;
+  }
+  .btn-Green-nav {
+    background-color: rgb(0, 89, 62);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 7px;
+    border: solid 3px;
+    text-decoration: none;
+    border: solid 2px rgb(255, 255, 255);
+    width: 100%;
   }
 }

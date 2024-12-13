@@ -45,6 +45,9 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log("Success:", result);
         alert("Form submitted successfully!");
         document.getElementById("form").reset(); // Reset the form
+        const contactModal = document.getElementById("ContactModal");
+        const modalInstance = bootstrap.Modal.getOrCreateInstance(contactModal); // Create instance if not exists
+        modalInstance.hide();
       })
       .catch((error) => {
         // console.error("Error:", error);
