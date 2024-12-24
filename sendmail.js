@@ -44,10 +44,11 @@ document.addEventListener("DOMContentLoaded", function () {
       .then((result) => {
         console.log("Success:", result);
         alert("Form submitted successfully!");
-        document.getElementById("form").reset(); // Reset the form
-        const contactModal = document.getElementById("ContactModal");
-        const modalInstance = bootstrap.Modal.getOrCreateInstance(contactModal); // Create instance if not exists
-        modalInstance.hide();
+        // document.getElementById("form").reset(); // Reset the form
+        // const contactModal = document.getElementById("ContactModal");
+        // const modalInstance = bootstrap.Modal.getOrCreateInstance(contactModal); // Create instance if not exists
+        // modalInstance.hide();
+        window.location.replace("https://www.9167773355.com/#submitted"); // Reload the page
       })
       .catch((error) => {
         // console.error("Error:", error);
