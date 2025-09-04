@@ -2,6 +2,11 @@ document.addEventListener("DOMContentLoaded", function () {
   // Function to collect form data
   function getFormData() {
     // console.log("Form submitted");
+    const checkbox = document.getElementById("checkboxTerms");
+    const hiddenInput = document.getElementById("hiddenTerms");
+    if (checkbox.checked) {
+      hiddenInput.disabled = true;
+    }
 
     const formData = {
       name: document.getElementById("name")
@@ -13,9 +18,10 @@ document.addEventListener("DOMContentLoaded", function () {
       phone: document.getElementById("phone")
         ? document.getElementById("phone").value.trim()
         : "",
-      street: document.getElementById("street")
-        ? document.getElementById("street").value.trim()
+      address: document.getElementById("address")
+        ? document.getElementById("address").value.trim()
         : "",
+      smsAgreement: hiddenInput.disabled ? "ok" : "don't send",
     };
 
     console.log("Collected Form Data:", formData);
@@ -26,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function submitForm() {
     const data = getFormData();
     const scriptURL =
-      "https://script.google.com/macros/s/AKfycbzA8Hh3EVUWzCxSqZbBPQzRoQ3gPDwpfi4JqjadGtAWPQXfSfRXMftf_yQthvnPmnQ7/exec"; // Replace with your Google Script URL
+      "https://script.google.com/macros/s/AKfycbzNmoNYmBkzrD8jXiF9wt3QQVvAfL4Tt-RXaZpXtk7457iZN0wKo9xVurdwjcrINNgy/exec"; // Replace with your Google Script URL
 
     fetch(scriptURL, {
       method: "POST",

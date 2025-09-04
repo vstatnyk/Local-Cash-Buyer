@@ -407,6 +407,7 @@
               <input type="text" class="border border-dark form-control" id="name" placeholder="Enter your name"
                 required />
             </div>
+
             <div class="row">
               <div class="col-md-6 mb-3">
                 <label for="email" class="form-label">Your Email</label>
@@ -424,20 +425,33 @@
               <input type="text" class="border border-dark form-control" id="street" placeholder="Enter the address"
                 required />
             </div>
+
+            <div class="form-check mb-3">
+              <input type="hidden" name="smsAgreement" value="false" id="hiddenTerms" />
+              <input class="form-check-input" type="checkbox" id="checkboxTerms" name="smsAgreement" value="true" />
+              <label class="form-check-label small text-muted" for="smsAgreement">
+                I agree to receive Communications by text message from Specialty Home Buyers about my inquiry.
+                You may opt-out by replying STOP or reply HELP for more information. Message frequency varies.
+                Message and data rates may apply. You may review our
+                <a href="https://9167773355.com/Privacy.html" target="_blank">Privacy Policy</a> and
+                <a href="https://9167773355.com/Terms.html" target="_blank">Terms and Conditions</a>.
+              </label>
+            </div>
+
+
             <div class="d-flex flex-column justify-content-center align-items-center">
-              <button type="submit" class="btn btn-Green " data-dismiss="modal">
+              <button type="submit" class="btn btn-Green" data-dismiss="modal">
                 Get Started
               </button>
             </div>
-
           </form>
         </div>
         <div class="modal-footer">
-
         </div>
       </div>
     </div>
   </div>
+
 
 
 
@@ -466,7 +480,5 @@
   </footer>
 
 </body>
-
-
 
 </html>
