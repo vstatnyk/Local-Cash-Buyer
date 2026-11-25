@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function submitForm() {
     const data = getFormData();
     const scriptURL =
-      "https://script.google.com/macros/s/AKfycbwUcqtmGmHNmhQvFK-Ron_oe6bDH6tZ5tUrXzZ7EUbBca4_ucksEbK7NuEWOJSmLPvH/exec"; // Replace with your Google Script URL
+      "https://script.google.com/macros/s/AKfycbxQD1X_ixGNy4Bd5vu75l5ueJb9wpOC3CCX1KreKc-GOZ5isLgciKazg4eK3KZ54b_u/exec"; // Replace with your Google Script URL
 
     fetch(scriptURL, {
       method: "POST",
