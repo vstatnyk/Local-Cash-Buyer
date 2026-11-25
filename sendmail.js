@@ -124,8 +124,8 @@ document.addEventListener("DOMContentLoaded", function () {
         window.location.replace("https://www.9167773355.com/#submitted"); // Reload the page
       })
       .catch((error) => {
-        // console.error("Error:", error);
-        alert("There was an error submitting the form.");
+        console.error("Form submit error:", error);
+        alert("There was an error submitting the form.\n\n(" + error.message + ")");
         resetTurnstile(); // tokens are single-use, get a fresh one for the retry
       });
   }
