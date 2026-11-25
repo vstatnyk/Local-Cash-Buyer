@@ -2,14 +2,13 @@ document.addEventListener("DOMContentLoaded", function () {
   // ---- Phone: require +1 (US) ----
   const phoneInput = document.getElementById("phone");
 
-  // Returns the 10-digit US number (without the leading 1), or "" if incomplete
+  // Returns up to 10 US digits, ignoring the +1 country code.
+  // (US area codes never start with 1, so any leading 1s are the country code.)
   function getUsDigits(value) {
-    let digits = value.replace(/\D/g, "");
-    if (digits.startsWith("1")) digits = digits.slice(1);
-    return digits.slice(0, 10);
+    return value.replace(/\D/g, "").replace(/^1+/, "").slice(0, 10);
   }
 
-  // Formats as "+1 (916) 555-1234" while typing, always keeping "+1 "
+  // Formats as "+1 (916) 555-1234", always keeping "+1 "
   function formatUsPhone(value) {
     const d = getUsDigits(value);
     let out = "+1 ";
@@ -19,21 +18,24 @@ document.addEventListener("DOMContentLoaded", function () {
     return out;
   }
 
+  // Valid = 10 digits, area code and exchange don't start with 0 or 1
   function validatePhone() {
-    const ok = getUsDigits(phoneInput.value).length === 10;
+    if (!phoneInput) return true;
+    phoneInput.value = formatUsPhone(phoneInput.value);
+    const ok = /^[2-9]\d{2}[2-9]\d{6}$/.test(getUsDigits(phoneInput.value));
     phoneInput.setCustomValidity(
-      ok ? "" : "Please enter a 10-digit US phone number starting with +1."
+      ok ? "" : "Please enter a valid 10-digit US phone number, e.g. +1 (916) 555-1234."
     );
     return ok;
   }
 
   if (phoneInput) {
     if (!phoneInput.value.startsWith("+1")) phoneInput.value = "+1 ";
-    phoneInput.addEventListener("input", function () {
-      phoneInput.value = formatUsPhone(phoneInput.value);
-      validatePhone();
-    });
-    // Don't let the cursor / backspace eat the "+1 " prefix
+    // Re-check on typing, autofill (change), and leaving the field
+    phoneInput.addEventListener("input", validatePhone);
+    phoneInput.addEventListener("change", validatePhone);
+    phoneInput.addEventListener("blur", validatePhone);
+    // Don't let backspace/delete eat the "+1 " prefix
     phoneInput.addEventListener("keydown", function (e) {
       const start = phoneInput.selectionStart;
       if ((e.key === "Backspace" && start <= 3) || (e.key === "Delete" && start < 3)) {
@@ -41,9 +43,12 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
     phoneInput.addEventListener("focus", function () {
-      if (phoneInput.value.trim() === "" ) phoneInput.value = "+1 ";
+      if (phoneInput.value.trim() === "") phoneInput.value = "+1 ";
     });
-    validatePhone();
+    // Re-check right before the browser's own form validation runs,
+    // so an autofilled number is never blocked by a stale error
+    const submitBtn = document.querySelector('#form button[type="submit"]');
+    if (submitBtn) submitBtn.addEventListener("click", validatePhone);
   }
 
   // ---- Cloudflare Turnstile ----
